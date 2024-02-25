@@ -7,147 +7,682 @@
     <meta name="keywords" content="web studio for site development" />
     <meta name="description" content="WebStudio helps you to get your dreams" />
     <title>WebStudio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./css/normalize.css" rel="stylesheet" />
+    <link href="./css/style.css" rel="stylesheet" />
   </head>
 
   <body>
-    <header>
-      <a class="logo" href="/"><span>Web</span>Studio</a>
-      <nav>
-        <ul>
-          <li><a href="#">Studio</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contacts</a></li>
-        </ul>
-      </nav>
-      <address>
-        <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-        <a href="tel:+110001111111">+11 (000) 111-11-11"</a>
-      </address>
-    </header>
+    <div class="page-container">
+      <!-- HEADER -->
+      <header class="header-section">
+        <div class="container">
+          <div class="header-wrapper">
+            <a class="logo logo-black" href="/">
+              <span class="accent-logo-color">Web</span>Studio</a
+            >
 
-    <main>
-      <section>
-        <h1>Effective Solutions <br />for Your Business</h1>
-        <button type="button">Order Service</button>
-      </section>
+            <div class="nav__menu" id="nav__menu">
+              <nav class="menu">
+                <ul class="menu__list">
+                  <li class="menu__item">
+                    <a class="menu__link" href="./studio.html">Studio</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="./contacts.html">Contacts</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="./portfolio.html">Portfolio</a>
+                  </li>
+                </ul>
+              </nav>
 
-      <section>
-        <ul>
-          <h2 hidden>Our advantages</h2>
-          <li>
-            <h3>Strategy</h3>
-            <p>
-              Our goal is to identify the business problem to walk away with the
-              perfect and creative solution.
-            </p>
-          </li>
-          <li>
-            <h3>Punctuality</h3>
-            <p>
-              Bring the key message to the brand's audience for the best price
-              within the shortest possible time.
-            </p>
-          </li>
-          <li>
-            <h3>Diligence</h3>
-            <p>
-              Research and confirm brands that present the strongest digital
-              growth opportunities and minimize risk.
-            </p>
-          </li>
-          <li>
-            <h3>Technologies</h3>
-            <p>
-              Design practice focused on digital experiences. We bring forth a
-              deep passion for problem-solving.
-            </p>
-          </li>
-        </ul>
-      </section>
+              <div class="contacts">
+                <address class="address">
+                  <ul class="address__list">
+                    <li class="address__item">
+                      <a class="address__link" href="mailto:info@devstudio.com">
+                        info@devstudio.com
+                      </a>
+                    </li>
+                    <li class="address__item">
+                      <a class="address__link" href="tel:+110001111111">
+                        +11 (000) 111-11-11
+                      </a>
+                    </li>
+                  </ul>
+                </address>
 
-      <section>
-        <h2>Our Team</h2>
-        <ul>
-          <li>
-            <img
-              src="./images/team/guerrero.jpg"
-              alt="Mark Guerrero"
-              width="264"
-            />
-            <h3>Mark Guerrero</h3>
-            <p>Product Designer</p>
-          </li>
+                <div class="social">
+                  <ul class="social__list">
+                    <li class="social__item">
+                      <a
+                        class="social__link"
+                        href="https://www.instagram.com/"
+                        target="_blank"
+                      >
+                        <img src="./icons/instagram.svg" alt="" />
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a
+                        class="social__link"
+                        href="https://twitter.com"
+                        target="_blank"
+                      >
+                        <img src="./icons/tweeter.svg" alt="" />
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a
+                        class="social__link"
+                        href="https://uk-ua.facebook.com"
+                        target="_blank"
+                      >
+                        <img src="./icons/fb.svg" alt="" />
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a
+                        class="social__link"
+                        href="https://ua.linkedin.com"
+                        target="_blank"
+                      >
+                        <img src="./icons/in.svg" alt="" />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
 
-          <li>
-            <img src="./images/team/ford.jpg" alt="Tom Ford" width="264" />
-            <h3>Tom Ford</h3>
-            <p>Frontend Develope</p>
-          </li>
+            <div class="header__burger" id="burger-btn">
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- HEADER -->
 
-          <li>
-            <img
-              src="./images/team/garcia.jpg"
-              alt="Camila Garcia"
-              width="264"
-            />
-            <h3>Camila Garcia</h3>
-            <p>Marketing</p>
-          </li>
+      <main>
+        <section class="hero_section">
+          <div class="container">
+            <h1 class="hero_section__title">
+              Effective Solutions for Your Business
+            </h1>
 
-          <li>
-            <img
-              src="./images/team/wilson.jpg"
-              alt="Daniel Wilson"
-              width="264"
-            />
-            <h3>Daniel Wilson</h3>
-            <p>UI Designer</p>
-          </li>
-        </ul>
-      </section>
-      <section>
-        <h2>Our Portfolio</h2>
-        <ul>
-          <li>
-            <img src="./images/portfolio/banking.jpg" alt="Banking App" width="360" />
-            <h3>Banking App</h3>
-            <p>App</p>
-          </li>
-          <li>
-            <img src="./images/portfolio/payment.jpg" alt="Cashless Payment" width="360" />
-            <h3>Cashless Payment</h3>
-            <p>Marketing</p>
-          </li>
-          <li>
-            <img src="./images/portfolio/meditation.jpg" alt="Meditation App" width="360" />
-            <h3>Meditation App</h3>
-            <p>App</p>
-          </li>
-          <li>
-            <img src="./images/portfolio/taxi.jpg" alt="Taxi Service" width="360" />
-            <h3>Taxi Service</h3>
-            <p>Marketing</p>
-          </li>
-          <li>
-            <img src="./images/portfolio/screen.jpg" alt="Screen Illustrations" width="360" />
-            <h3>Screen Illustrations</h3>
-            <p>Design</p>
-          </li>
-          <li>
-            <img src="./images/portfolio/courses.jpg" alt="Online Courses" />
-            <h3>Online Courses</h3>
-            <p>Marketing</p>
-          </li>
-        </ul>
-      </section>
-    </main>
+            <button id="order-btn" class="btn" type="button">
+              Order Service
+            </button>
+          </div>
+        </section>
 
-    <footer>
-      <a class="logo" href="/"><span>Web</span>Studio</a>
-      <p>
-        Increase the flow of customers and sales for your business with digital
-        marketing & growth solutions.
-      </p>
-    </footer>
+        <section class="advantages_section">
+          <div class="container relative">
+            <h2 class="section__title hidden">Our advantages</h2>
+
+            <ul class="advantages_list">
+              <li class="advantages__item">
+                <div class="advantages_banner">
+                  <img src="./images/antenna.png" alt="" />
+                </div>
+                <h3 class="section__sub_title">Strategy</h3>
+                <p class="section__paragraph">
+                  Our goal is to identify the business problem to walk away with
+                  the perfect and creative solution.
+                </p>
+              </li>
+              <li class="advantages__item">
+                <div class="advantages_banner">
+                  <img src="./images/clock.png" alt="" />
+                </div>
+                <h3 class="section__sub_title">Punctuality</h3>
+                <p class="section__paragraph">
+                  Bring the key message to the brand's audience for the best
+                  price within the shortest possible time.
+                </p>
+              </li>
+              <li class="advantages__item">
+                <div class="advantages_banner">
+                  <img src="./images/diagram.png" alt="" />
+                </div>
+                <h3 class="section__sub_title">Diligence</h3>
+                <p class="section__paragraph">
+                  Research and confirm brands that present the strongest digital
+                  growth opportunities and minimize risk.
+                </p>
+              </li>
+              <li class="advantages__item">
+                <div class="advantages_banner">
+                  <img src="./images/astronaut.png" alt="" />
+                </div>
+                <h3 class="section__sub_title">Technologies</h3>
+                <p class="section__paragraph">
+                  Design practice focused on digital experiences. We bring forth
+                  a deep passion for problem-solving.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="team-section">
+          <div class="container">
+            <h2 class="section__title">Our Team</h2>
+            <ul class="team__list">
+              <li class="team__item">
+                <img
+                  class="team__img"
+                  src="./images/team/guerrero.jpg"
+                  alt="Mark Guerrero"
+                  width="264"
+                />
+                <div class="team__description">
+                  <h3 class="section__sub_title">Mark Guerrero</h3>
+                  <p class="item__description">Product Designer</p>
+                  <ul class="team-social-list">
+                    <li class="social__item">
+                      <a
+                        class="social__link"
+                        href="https://www.instagram.com"
+                        target="_blank"
+                      >
+                        <img src="./icons/instagram.svg" alt="" />
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a
+                        class="social__link"
+                        href="https://twitter.com"
+                        target="_blank"
+                      >
+                        <img src="./icons/tweeter.svg" alt="" />
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a
+                        class="social__link"
+                        href="https://uk-ua.facebook.com"
+                        target="_blank"
+                      >
+                        <img src="./icons/fb.svg" alt="" />
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a
+                        class="social__link"
+                        href="https://ua.linkedin.com"
+                        target="_blank"
+                      >
+                        <img src="./icons/in.svg" alt="" />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="team__item">
+                <img
+                  class="team__img"
+                  src="./images/team/ford.jpg"
+                  alt="Tom Ford"
+                  width="264"
+                />
+                <div class="team__description">
+                  <h3 class="section__sub_title">Tom Ford</h3>
+                  <p class="item__description">Frontend Develope</p>
+                  <ul class="team-social-list">
+                    <li class="social__item">
+                      <a
+                        class="social__link"
+                        href="https://www.instagram.com"
+                        target="_blank"
+                      >
+                        <img src="./icons/instagram.svg" alt="" />
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a
+                        class="social__link"
+                        href="https://twitter.com"
+                        target="_blank"
+                      >
+                        <img src="./icons/tweeter.svg" alt="" />
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a
+                        class="social__link"
+                        href="https://uk-ua.facebook.com"
+                        target="_blank"
+                      >
+                        <img src="./icons/fb.svg" alt="" />
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a
+                        class="social__link"
+                        href="https://ua.linkedin.com"
+                        target="_blank"
+                      >
+                        <img src="./icons/in.svg" alt="" />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="team__item">
+                <img
+                  class="team__img"
+                  src="./images/team/garcia.jpg"
+                  alt="Camila Garcia"
+                  width="264"
+                />
+                <div class="team__description">
+                  <h3 class="section__sub_title">Camila Garcia</h3>
+                  <p class="team_description">Marketing</p>
+                  <ul class="team-social-list">
+                    <li class="social__item">
+                      <a
+                        class="social__link"
+                        href="https://www.instagram.com"
+                        target="_blank"
+                      >
+                        <img src="./icons/instagram.svg" alt="" />
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a
+                        class="social__link"
+                        href="https://twitter.com"
+                        target="_blank"
+                      >
+                        <img src="./icons/tweeter.svg" alt="" />
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a
+                        class="social__link"
+                        href="https://uk-ua.facebook.com"
+                        target="_blank"
+                      >
+                        <img src="./icons/fb.svg" alt="" />
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a
+                        class="social__link"
+                        href="https://ua.linkedin.com"
+                        target="_blank"
+                      >
+                        <img src="./icons/in.svg" alt="" />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="team__item">
+                <img
+                  class="team__img"
+                  src="./images/team/wilson.jpg"
+                  alt="Daniel Wilson"
+                  width="264"
+                />
+                <div class="team__description">
+                  <h3 class="section__sub_title">Daniel Wilson</h3>
+                  <p class="item__description">UI Designer</p>
+                  <ul class="team-social-list">
+                    <li class="social__item">
+                      <a
+                        class="social__link"
+                        href="https://www.instagram.com"
+                        target="_blank"
+                      >
+                        <img src="./icons/instagram.svg" alt="" />
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a
+                        class="social__link"
+                        href="https://twitter.com"
+                        target="_blank"
+                      >
+                        <img src="./icons/tweeter.svg" alt="" />
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a
+                        class="social__link"
+                        href="https://uk-ua.facebook.com"
+                        target="_blank"
+                      >
+                        <img src="./icons/fb.svg" alt="" />
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a
+                        class="social__link"
+                        href="https://ua.linkedin.com"
+                        target="_blank"
+                      >
+                        <img src="./icons/in.svg" alt="" />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="portfolio-section">
+          <div class="container">
+            <h2 class="section__title">Our Portfolio</h2>
+            <ul class="portfolio__list">
+              <li class="portfolio__item">
+                <img
+                  src="./images/portfolio/banking.jpg"
+                  alt="Banking App"
+                  width="360"
+                />
+                <div class="portfolio__description">
+                  <h3 class="section__sub_title">Banking App</h3>
+                  <p class="portfolio__department">App</p>
+                </div>
+              </li>
+              <li class="portfolio__item">
+                <img
+                  src="./images/portfolio/payment.jpg"
+                  alt="Cashless Payment"
+                  width="360"
+                />
+                <div class="portfolio__description">
+                  <h3 class="section__sub_title">Cashless Payment</h3>
+                  <p class="portfolio__department">Marketing</p>
+                </div>
+              </li>
+              <li class="portfolio__item">
+                <img
+                  src="./images/portfolio/meditation.jpg"
+                  alt="Meditation App"
+                  width="360"
+                />
+                <div class="portfolio__description">
+                  <h3 class="section__sub_title">Meditation App</h3>
+                  <p class="portfolio__department">App</p>
+                </div>
+              </li>
+              <li class="portfolio__item">
+                <img
+                  src="./images/portfolio/taxi.jpg"
+                  alt="Taxi Service"
+                  width="360"
+                />
+                <div class="portfolio__description">
+                  <h3 class="section__sub_title">Taxi Service</h3>
+                  <p class="portfolio__department">Marketing</p>
+                </div>
+              </li>
+              <li class="portfolio__item">
+                <img
+                  src="./images/portfolio/screen.jpg"
+                  alt="Screen Illustrations"
+                  width="360"
+                />
+                <div class="portfolio__description">
+                  <h3 class="section__sub_title">Screen Illustrations</h3>
+                  <p class="portfolio__department">Design</p>
+                </div>
+              </li>
+              <li class="portfolio__item">
+                <img
+                  src="./images/portfolio/courses.jpg"
+                  alt="Online Courses"
+                />
+                <div class="portfolio__description">
+                  <h3 class="section__sub_title">Online Courses</h3>
+                  <p class="portfolio__department">Marketing</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__content">
+            <div class="footer___item footer__info">
+              <a class="logo logo-white" href="/"
+                ><span class="accent-logo-color">Web</span>Studio</a
+              >
+              <p>
+                Increase the flow of customers and sales for your business with
+                digital marketing & growth solutions.
+              </p>
+            </div>
+            <div class="footer___item footer__social">
+              <h3 class="footer-social__title">Social media</h3>
+              <ul class="social__list">
+                <li class="social__item">
+                  <a
+                    class="social__link"
+                    href="https://www.instagram.com"
+                    target="_blank"
+                  >
+                    <img src="./icons/instagram.svg" alt="" />
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a
+                    class="social__link"
+                    href="https://twitter.com"
+                    target="_blank"
+                  >
+                    <img src="./icons/tweeter.svg" alt="" />
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a
+                    class="social__link"
+                    href="https://uk-ua.facebook.com"
+                    target="_blank"
+                  >
+                    <img src="./icons/fb.svg" alt="" />
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a
+                    class="social__link"
+                    href="https://ua.linkedin.com"
+                    target="_blank"
+                  >
+                    <img src="./icons/in.svg" alt="" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer___item item-form">
+              <div class="footer__form">
+                <h3 class="footer-form__title">Subscribe</h3>
+                <form
+                  name="subscribe-form"
+                  action="/"
+                  method="post"
+                  autocomplete="off"
+                  class="subscribe__form"
+                >
+                  <div class="form-control">
+                    <input
+                      type="text"
+                      id="subscribe"
+                      name="email"
+                      placeholder="E-mail"
+                    />
+                  </div>
+                  <button type="submit" class="btn btn-small">
+                    Subscrube
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M24 2L0 13.25L7.66994 15.6172L19.5 6.375L10.5017 16.4913L10.509 16.4936L10.5 16.4913V22L14.8013 17.8183L20.2501 19.5L24 2Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div class="modal" id="modal-dialog">
+      <div class="modal-content">
+        <h3 class="contacts-form__title">
+          Leave your contacts and we will call you back
+        </h3>
+
+        <div class="modal-close" id="close-dialog">
+          <span></span>
+          <span></span>
+        </div>
+        <form
+          id="contact-submit"
+          class="form__contacts"
+          method="post"
+          action="/"
+          autocomplete="off"
+        >
+          <label class="form__label" for="name">
+            <span class="form_label__text">Name</span>
+            <span class="input__group">
+              <input
+                class="form__control"
+                type="text"
+                name="name"
+                id="name"
+                placeholder=""
+                value=""
+              />
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_597308_1002)">
+                  <path
+                    d="M9 9C10.6575 9 12 7.6575 12 6C12 4.3425 10.6575 3 9 3C7.3425 3 6 4.3425 6 6C6 7.6575 7.3425 9 9 9ZM9 10.5C6.9975 10.5 3 11.505 3 13.5V14.25C3 14.6625 3.3375 15 3.75 15H14.25C14.6625 15 15 14.6625 15 14.25V13.5C15 11.505 11.0025 10.5 9 10.5Z"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_597308_1002">
+                    <rect width="18" height="18" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </span>
+          </label>
+          <label for="phone" class="form__label">
+            <span class="form_label__text">Phone</span>
+            <span class="input__group">
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                class="form__control"
+                placeholder=""
+                value=""
+              />
+              <svg
+                width="18"
+                height="24"
+                viewBox="0 0 18 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_302815_5425)">
+                  <path
+                    d="M14.7263 13.8651L12.8881 13.6552C12.4467 13.6046 12.0125 13.7566 11.7013 14.0677L10.3697 15.3993C8.3217 14.3572 6.64276 12.6855 5.60067 10.6303L6.93947 9.29144C7.25065 8.98025 7.40263 8.54605 7.35197 8.1046L7.1421 6.28092C7.05526 5.55 6.44013 5 5.70198 5H4.45002C3.63226 5 2.952 5.68026 3.00266 6.49802C3.38621 12.6783 8.32894 17.6138 14.5019 17.9973C15.3197 18.048 15.9999 17.3677 15.9999 16.55V15.298C16.0072 14.5671 15.4572 13.952 14.7263 13.8651Z"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_302815_5425">
+                    <rect width="18" height="24" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </span>
+          </label>
+          <label for="email" class="form__label">
+            <span class="form_label__text">Email</span>
+            <span class="input__group">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="form__control"
+                placeholder=""
+                value=""
+              />
+              <svg
+                width="18"
+                height="24"
+                viewBox="0 0 18 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_302815_5431)">
+                  <path
+                    d="M15 6H3C2.175 6 1.5075 6.675 1.5075 7.5L1.5 16.5C1.5 17.325 2.175 18 3 18H15C15.825 18 16.5 17.325 16.5 16.5V7.5C16.5 6.675 15.825 6 15 6ZM14.7 9.1875L9.3975 12.5025C9.1575 12.6525 8.8425 12.6525 8.6025 12.5025L3.3 9.1875C3.1125 9.0675 3 8.865 3 8.6475C3 8.145 3.5475 7.845 3.975 8.1075L9 11.25L14.025 8.1075C14.4525 7.845 15 8.145 15 8.6475C15 8.865 14.8875 9.0675 14.7 9.1875Z"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_302815_5431">
+                    <rect width="18" height="24" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </span>
+          </label>
+          <label for="comment" class="form__label">
+            <span class="form_label__text"></span>
+            <textarea
+              name="comment"
+              class="form__control"
+              id="comment"
+              placeholder="Text input"
+            ></textarea>
+          </label>
+
+          <label for="term" class="form__label_terms">
+            <input type="checkbox" id="term" name="term" />
+            <span class="form_label__text">
+              I accept the terms and conditions of the
+              <a class="term__policy" href="#">Privacy Policy</a>
+            </span>
+          </label>
+          <button type="submit" class="btn btn-small contact__btn">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/app.js"></script>
   </body>
 </html>
